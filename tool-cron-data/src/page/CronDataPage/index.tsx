@@ -1,12 +1,9 @@
-import { useState } from 'react'
-
 function CronDataPage() {
- 
   return (
-    <div className="App">
-      Test Cron Page
+    <div>
+      Cron Data Page
     </div>
   )
 }
-
-export default CronDataPage;
+  
+  export default CronDataPage;
