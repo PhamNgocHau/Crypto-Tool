@@ -4,13 +4,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import CronDataPage from './page/CronDataPage';
-import MainPage from '@page/MainPage';
+import CronDataPage from 'pages/CronDataPage';
+import MainPage from 'pages/MainPage';
 
 const routers = createBrowserRouter([
   {
     path: "/",
     element: <CronDataPage />,
+  },
+  {
+    path: "/main-page",
+    element: <MainPage />,
   },
 ]);
 
