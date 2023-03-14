@@ -1,7 +1,6 @@
 import React from 'react';
 import { ButtonCustomStyle } from "./style";
 import type { SizeType } from 'antd/es/config-provider/SizeContext';
-
 interface ButtonProps {
   className?: string;
   onClick?: () => void;
@@ -22,7 +21,6 @@ interface ButtonProps {
 }
 
 function Button({ children, className, onClick, width, height, color, background, size, icon, disabled, buttonType, ...props }: ButtonProps) {
-
   return (
     <ButtonCustomStyle 
       {...props}

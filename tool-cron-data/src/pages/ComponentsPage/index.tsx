@@ -15,6 +15,7 @@ const ComponentsPage: React.FC = () => {
         <Button
           className="test-class"
           shape="round"
+          // danger
           icon={<PoweroffOutlined />}
           buttonType="primary"
           size="middle"
