@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import CronDataPage from 'pages/CronDataPage';
+import ComponentsPage from 'pages/ComponentsPage';
 import MainPage from 'pages/MainPage';
 
 import 'antd/dist/reset.css';
@@ -13,7 +13,7 @@ import './index.css';
 const routers = createBrowserRouter([
   {
     path: "/",
-    element: <CronDataPage />,
+    element: <ComponentsPage/>
   },
   {
     path: "/main-page",
