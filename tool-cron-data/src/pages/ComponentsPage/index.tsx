@@ -17,7 +17,7 @@ const ComponentsPage: React.FC = () => {
           shape="round"
           // danger
           icon={<PoweroffOutlined />}
-          buttonType="primary"
+          type="primary"
           size="middle"
           width="120px"
           height="auto"
