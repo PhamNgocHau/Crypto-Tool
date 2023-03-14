@@ -20,17 +20,14 @@ interface ButtonProps {
   size?: SizeType;
 }
 
-function Button({ children, className, onClick, width, height, color, background, size, icon, disabled, buttonType, ...props }: ButtonProps) {
+const Button: React.FC<ButtonProps> = (props) => {
+  const { className, width, height, color, background, onClick, buttonType, disabled, size, icon, children } = props;
+
   return (
     <ButtonCustomStyle 
       {...props}
       className={className}
-      style={{
-        width: width,
-        height: height,
-        color: color,
-        background: background,
-      }}
+      style={{ width, height, color, background }}
       onClick={onClick}
       type={buttonType}
       disabled={disabled}
