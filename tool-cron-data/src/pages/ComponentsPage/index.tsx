@@ -1,11 +1,13 @@
 import React from 'react';
 import { PoweroffOutlined } from '@ant-design/icons';
 import Button from "components/button";
+import { testCallAPI } from "service/main";
 
 const ComponentsPage: React.FC = () => {
 
-  const handleClickButton = () => {
+  const handleClickButton = async () => {
     console.log('Runnnn >>>');
+    await testCallAPI();
   };
 
   return (

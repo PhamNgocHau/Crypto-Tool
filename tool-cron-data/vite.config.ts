@@ -11,8 +11,9 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src/"),
       components: `${path.resolve(__dirname, "./src/components/")}`,
-      public: `${path.resolve(__dirname, "./public/")}`,
       pages: path.resolve(__dirname, "./src/pages"),
+      service: `${path.resolve(__dirname, "./src/service/")}`,
+      public: `${path.resolve(__dirname, "./public/")}`,
       types: `${path.resolve(__dirname, "./src/@types")}`,
     },
   },
