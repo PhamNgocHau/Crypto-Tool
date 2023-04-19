@@ -1,2 +1,2 @@
-# Crypto T
+# Crypto Tool
 tool copy trading
