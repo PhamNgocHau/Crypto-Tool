@@ -1,2 +1,2 @@
-# tool-cron-data
+# Crypto T
 tool copy trading
