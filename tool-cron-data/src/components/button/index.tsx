@@ -1,6 +1,7 @@
 import React from 'react';
 import { ButtonCustomStyle } from "./style";
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import{ SizeType } from 'antd/es/config-provider/SizeContext';
+
 interface ButtonProps {
   className?: string;
   onClick?: () => void;
