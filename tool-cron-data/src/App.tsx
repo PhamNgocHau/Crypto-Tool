@@ -6,26 +6,23 @@ import {
 
 import ComponentsPage from 'pages/ComponentsPage';
 import MainPage from 'pages/MainPage';
+import SettingPage from 'pages/SettingPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import 'antd/dist/reset.css';
 import './index.css';
-
-const routers = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainPage/>
-  },
-  {
-    path: "/test-component",
-    element: <ComponentsPage/>
-  },
-]);
 
 function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={routers} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />}></Route>
+          <Route path="/setting" element={<SettingPage />}></Route>
+          <Route path="/test-component" element={<ComponentsPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
